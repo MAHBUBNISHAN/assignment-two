@@ -1,13 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
-    margin-top: 0px;
+    padding: 0px;
+    margin: 0px;
     background-color:aliceblue;
 }
 .one-part{
-    margin-top: 0PX;
+    padding-top: 50px;
+
     background-color: antiquewhite;
 }
 nav{
-    margin-top: 50px;
+   
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -110,6 +116,7 @@ color: #727272;
     color: #FF900E;
 }
 .two-description{
+    
     font-weight: 400;
 font-size: 16px;
 color: #727272;
@@ -125,6 +132,9 @@ color: #727272;
 .three-text{
     width: 586px;
     height: 982px;
+}
+.text-title{
+    margin-bottom: 30px;
 }
 .text-title h2{
     font-weight: 700;
@@ -146,6 +156,7 @@ color: #727272;
     row-gap: 20px;
 }
 .description-box{
+  box-shadow: 8px 8px 8px #877f7f;
     width: 586px;
     height: 171px;
 }
@@ -246,7 +257,7 @@ font-size: 45px;
 font-size: 20px;
 color: #727272;
 }
-.five{
+.five,.bonus{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,12 +265,12 @@ color: #727272;
     margin-top: 180px;
     margin-bottom: 130px;
 }
-.five-title{
+.five-title,.bonus-title{
     display:flex ;
     flex-direction: column;
     align-items: center;
 }
-.five-title h3{
+.five-title h3,.bonus-title h3{
     font-weight: 700;
 font-size: 45px;
 margin-bottom: 8px;
@@ -272,7 +283,15 @@ height: 52px;
 color: #727272;
 text-align: center;
 }
-.five-icon{
+.bonus-title p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 542px;
+    height: 52px;
+    color: #727272;
+    text-align: center;
+}
+.five-icon,.bonus-icon{
     margin-top: 34px;
     display: flex;
     flex-direction: row;
@@ -291,10 +310,164 @@ border-radius: 8px;
 margin: 0px auto 280px auto;
 
 }
-.last div{
+.last-p{
     display: flex;
   justify-content: center;
   align-items: center;
     font-weight: 400;
 font-size: 20px;
 }
+/* hover part */
+.icon:hover{
+    block-size:100px;
+    color: aqua;
+    font-size: 500px;
+    background-color:cadetblue;
+}
+@media only screen and (max-width: 672px){
+    nav{
+        margin: 5px 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav h3{
+        margin: 0px;
+    }
+    nav ul{
+        margin: 30px 0;
+    }
+   body{
+    width: 100%;
+   }
+   .section-main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 5px 5px;
+   }
+   .one-main-section {
+  margin: 10px auto 100px auto;
+    width: 100%;
+   }
+   .one-image img{
+    width: 100%;
+    height: fit-content;
+   }
+   .two-part{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+   }
+   .two-image{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   }
+   .two-text{
+    margin: 20px auto;
+   }
+   .three{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px;
+   }
+   .three-text{
+    width: auto;
+    height: auto;
+   }
+   .text-title{
+    margin: 0 5px;
+    width:100%
+  
+   }
+   
+   .text-title h2{
+    margin: 0;
+    width:390px;
+   }
+   .text-description{
+    margin-top: 30px;
+   }
+.three-image{
+    position:relative;
+    width: 100%;
+    row-gap: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.three-image img{
+    width: 100%;
+    height: 527px;
+   }
+.big-button{
+    font-weight: 700;
+font-size: 35px;
+color: #FFFFFF;
+background: #FF900E;
+border-radius: 8px;
+width: 142px;
+height: 100px;
+position: absolute;
+bottom: 300px;
+left: 100px;
+  }
+.four{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.four-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.four-title{
+    margin: 10px auto;
+}
+.four-title p{
+    width: 100%;
+}
+.five-title,.bonus-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.five-title p{
+    width: 100%;
+}
+.five-icon,.bonus-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.last{
+    width: 100%;
+height: 100px;
+background: #FFF4E7;
+border-radius: 8px;
+margin: 0px auto 280px auto;
+
+}
+.last-p{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+}
+
+
+
+
+    
